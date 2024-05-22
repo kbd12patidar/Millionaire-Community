@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <header><b>Millionaire Community Services Private Limited</b><br>
+        SEBI Registered Research Analyst No.  INMO000007668 | CIN NO : U76680MP2019CTF170303 |<br> GST : 23FDLPM7668M1Z9
+        Office Address : 1003 Bhoomi Gardenia 2 Plot No.10 ,Sector 20 Navi Mumbai Pincode – 410218, Maharashtra.
+    </header>
+    <nav >
+        <!-- <img src="aaa1.webp" alt=""> -->
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn" >
+            <i class="fa-solid fa-bars"></i>
+            <!-- <img src="aaa1.jpg" alt=""width="20px"> -->
+        </label>
+        <label class="logo">Millionaire Community</label>
+        <ul>
+            <li><a class="active" href="navbar.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="complaintdata.html">Complaint Data</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+      <!-- --------Section part 1 about--------- -->
+    <section>
+        <div id="main1">
+             <h1>About us</h1>
+             <h2>The Millionaire Community Services Private Limited</h2>
+             <p>The Millionaire Community Services Private Limited, 
+                a company incorporated under the provisions of the companies act, 2019, 
+                The Millionaire Community is registered with SEBI and holds a license as a Research Analyst (Registration Number: INMO000007668).
+                 It provides research, recommendation, for traders and investors which include HNIs, and retail traders/investors. 
+                 In today’s constantly evolving markets, keeping up with the changes taking place is a challenge. The ever-increasing rate of change taking
+                  place creates a clear advantage for those who can spot and catch an opportunity and react to it immediately.
+                  At Millionaire Community, our creative approach, unmatched research, smart sales team,
+                 and befitting technology remarkably qualify us to take advantage of the opportunities which have enabled us to provide exceptional service to our clients in advanced and unique ways.
+                </p> <br><br>
+            <p>We bring to you the proficiency of our experience across a variety of services, coupled with conviction emerging from meticulous research,
+                 to help you achieve your investment objectives. We are continuously scaling the heights of success.</p>
+                 <p>We at Millionaire Community believe that the key to a successful client relationship is to comprehend and achieve our clients’ 
+                    goals and maximize available opportunities, taking into account the risk factor.</p>
+        </div>
+    </section>
+
+    <!-- -------------------section part 2 about----------------- -->
+
+    <div class="slider">
+        <div class="slider-inner">
+            <div class="slide">
+                <h1 style=" font-family: Ubuntu Sans, sans-serif;"><b style="font-size:120px;color:blanchedalmond;">“</b><br>The stock market is filled with individual who know the price of everything,<br>but the value of nothing.</h1>
+                <!-- <img src="/black/jack/ab1.jpg" alt="Image 1" width="400px" height="250px"> -->
+            </div>
+            <div class="slide">
+                <h1 style=" font-family: Ubuntu Sans, sans-serif;"><b style="font-size:120px;color:blanchedalmond;">“</b><br>The stock market is desined to <br>transfer money from the active to patient.</h1>
+                <!-- <img src="/black/jack/ab2.jpg" alt="Image 2"> -->
+            </div>
+            <div class="slide" style=" font-family: Ubuntu Sans, sans-serif;">
+                <h1><b style="font-size:120px;color:blanchedalmond;">“</b><br>If stock market experts were so expert,<br> they would be buying stock,<br>not selling advice.</h1>
+                <!-- <img src="/black/jack/ab3.jpg" alt="Image 3"> -->
+            </div>
+        </div>
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+    
+    <!-- ---------------follows up---------- -->
+    <div id="info">
+        <img src="aaa5.png" alt="" height="180px" width="140px"><br>
+        <p style="font-size: 20px; color: white;">
+        Investments in securities are subject to market risks, which includes price fluctuation risk. 
+        There is no assurance or guarantee that the objectives of any of the products mentioned in
+         this document or on this site will be achieved.</p>
+        <a href="#"><i class="fa-brands fa-linkedin fa-2x " style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"style="color: white;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-2x"style="color: white;"></i></a>
+    </div>
+     <!-- ---------------javaScript section part 2 about------------- -->
+
+     <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+    
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+            const offset = -slideIndex * 100;
+            document.querySelector('.slider-inner').style.transform = `translateX(${offset}%)`;
+        }
+    
+        function prevSlide() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 1;
+            }
+            const offset = -slideIndex * 100;
+            document.querySelector('.slider-inner').style.transform = `translateX(${offset}%)`;
+        }
+    
+        function nextSlide() {
+            showSlides();
+        }
+    
+        setInterval(showSlides, 3000); // Change slide every 3 seconds
+    </script>
+    
+</body>
+</html>

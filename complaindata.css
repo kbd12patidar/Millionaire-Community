@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+header{
+    background-color: rgb(46, 46, 50);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+@media (max-width: 480px){
+    header{
+        width: 144%;
+    }
+}
+ table{
+    border: 1px solid black;
+
+}
+th{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 4px;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+#com{
+    background-color: rgb(255, 255, 248); 
+     border-radius: 20px;
+    /* margin-right: 25%;
+    margin-left: 25%; */
+} 
+
+
+/* <!-- -----------------------section  follows up ------------- --> */
+
+#info{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+#info img{
+   height:180px ;
+   width: 160px;
+}
+#info a{
+    background: #000000;
+}
+i{
+    margin: 10px;
+}
+#info i:hover{
+        background-color: rgb(18, 216, 223);
+        border-radius: 5px;
+}
+@media (max-width: 480px){
+    #info{
+        width: 144%;
+    }
+}
+
+
+ /* -----section part 1---- */ */
+#main1{
+    margin-top: 60px;
+    margin-left: 10px;
+    display: flex;
+}
+#contact{
+    /* border: 1px solid black ; */
+    width: 100%;
+    /* text-align: center; */
+    padding: 10px;
+    background-color: rgb(236, 238, 247);
+}
+#contact h6{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+#contact h1{
+    font-family: "Playfair Display", serif;
+    font-size:50px ;
+}
+input{
+    border:none ;
+    background-color: rgb(208, 216, 228);
+    padding: 10px;
+    width: 90%;
+}
+textarea{
+    border: none;
+    background-color: rgb(208, 216, 228);
+    padding: 10px;
+    width: 90%;
+}
+#sideimage{
+    margin-left: -15;
+    text-align: center;
+   /* border: 1px solid black; */
+}
+button{
+    background-color: rgb(14, 48, 219);
+    color: white;
+    padding: 10px;
+    width: 90px;
+}
+@media screen and (max-width: 768px) {
+    #main1 {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of elements for better mobile layout */
+    }
+    #contact {
+        width: 100%; /* Make contact form take full width */
+    }
+    #sideimage {
+        width: 100%;
+        margin-top: 20px; /* Add some space between contact form and image */
+    }
+}
+
+/* For screens larger than 768px (tablets and desktops) */
+@media screen and (min-width: 769px) {
+    #main1 {
+        display: flex;
+        justify-content: space-between; /* Arrange elements side by side */
+        align-items: center; /* Center elements vertically */
+    }
+    #contact {
+        width: 60%; /* Make contact form take 60% of the width */
+    }
+    #sideimage {
+        width: 30%; /* Make image take 30% of the width */
+    }
+}
+
+/* ------------chatgpt------ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 0px;
+    
+}
+

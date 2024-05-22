@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usefullink</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+header{
+    background-color: rgb(46, 46, 50);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+body{
+    min-height: 100vh;
+    background: rgb(172, 221, 240);
+}
+.container{
+    height: 100vh;
+    /* width: 100%; */
+    padding: 0 8%;
+}
+.container h1{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+}
+.container h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: #298;
+}
+.container .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 30px;
+    
+}
+ .service{
+    /* background: red; */
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform .5s;
+    cursor: pointer;
+}
+ .service:hover{
+    transform: scale(1.1);
+    background: #298;
+ }
+</style>
+<body>
+
+    <header><b>Millionaire Community Services Private Limited</b><br>
+        SEBI Registered Research Analyst No.  INMO000007668 | CIN NO : U76680MP2019CTF170303| GST : 23FDLPM7668M1Z9<br>
+        Office Address : SEBI Bhavan BKC, Plot No.C4-A, 'G' Block Bandra- Kurla Complex, Bandra (East), Mumbai 400051, Maharashtra -</header>
+        <div class="container">
+            <h1>Usefullink</h1>
+            <div class="row">
+               <a href="About.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-regular fa-note-sticky fa-2x"></i>
+                <h2>About Us</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               <a href="pricing.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-regular fa-credit-card fa-2x"></i>
+                <h2>Pricing</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               <a href="contactus.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-solid fa-address-book fa-2x"></i>
+                <h2>Contact us</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               <a href="bankdetail.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-solid fa-money-check-dollar fa-2x"></i>
+                <h2>Payment</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               <a href="index.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-solid fa-fingerprint fa-2x"></i>
+                <h2>KYC</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               <a href="index.html" style="text-decoration: none; color: black;"><div id="service" class="service">
+                <i class="fa-solid fa-layer-group fa-2x"></i>
+                <h2>Career</h2>
+                <!-- <p>The NIFTY 50 is a benchmark stock market index representing the top 50 companies listed on the National Stock Exchange (NSE) of India. </p> -->
+               </div>
+               </a>
+               
+               </div>
+        </div>
+</body>
+</html>
