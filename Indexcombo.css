@@ -117,7 +117,14 @@ nav ul li a.active,a:hover{
 #simage{
     width: 100%;
 }
-
+@media only screen and (max-width: 480px) {
+    #sec1 {
+       width: 100%;
+    }
+    #simage{
+        display: none;
+    }
+}
 /* ---------section of process----- */
 #section3{
     margin-top: 70px;
